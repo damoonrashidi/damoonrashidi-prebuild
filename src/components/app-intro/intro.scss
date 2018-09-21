@@ -1,0 +1,34 @@
+.host {
+  background: #eee;
+  padding: 50px 0;
+  transform: translateY(-50px);
+  z-index: -1;
+  clip-path: polygon(0 50px, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.container {
+  box-sizing: border-box;
+  padding: 100px 0;
+  margin: 20px auto;
+  width: 100%;
+  font: 300 1.5em/2.2em 'IBM Plex Mono', monospace;
+  letter-spacing: 36px;
+  @media all and (min-width: 900px) {
+    width: 650px;
+  }
+}
+
+hr {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #000;
+  transform: scale(0.8) skewY(4deg);
+  @media all and (min-width: 900px) {
+    transform: scale(1.5) skewY(4deg);
+  }
+  &:nth-child(2n) {
+    transform: scale(0.8) skewY(3deg);
+    @media all and (min-width: 900px) {
+      transform: scale(1.5) skewY(3deg);
+    }
+  }
+}

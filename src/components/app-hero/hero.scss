@@ -1,0 +1,25 @@
+.host {
+  height: 500px;
+  width: 100vw;
+  background: #223;
+  display: block;
+}
+
+.header {
+  text-transform: uppercase;
+  position: absolute;
+  color: #fff;
+  transform: translate(50px, 50px);
+  width: calc(100vw - 100px);
+  @media all and (min-width: 900px) {
+    transform: translate(100px, 100px);
+    width: calc(100vw - 100px);
+  }
+  h1 {
+    font: 400 5em/1em 'Passion One', sans-serif;
+  }
+  h2 {
+    font: 200 2em/0em 'Passion One', sans-serif;
+    color: #eee;
+  }
+}

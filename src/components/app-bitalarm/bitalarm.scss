@@ -1,0 +1,47 @@
+.host {
+  min-height: 900px;
+  background: transparent;
+  transform: translateY(-151px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+
+  .idiotic-phone-thing-that-everyone-has {
+    transform-style: preserve-3d;
+    transform: rotateY(-22deg);
+  }
+
+  .content {
+    z-index: 2;
+    width: 100%;
+    padding: 40px 0 40px 80px;
+    background: transparent;
+    @media all and (min-width: 900px) {
+      width: 500px;
+    }
+
+    h2 {
+      font: 300 4em/1em 'Passion One', sans-serif;
+      color: #000;
+      margin: 0;
+    }
+    .projects-links a {
+      display: inline-block;
+      margin: 0 20px 0 0;
+      color: #888;
+    }
+    p {
+      font: 300 1.5em/1.5em 'Open Sans', sans-serif;
+      color: #888;
+      max-width: 500px;
+      a {
+        color: #888;
+        margin: 0;
+      }
+    }
+  }
+}
