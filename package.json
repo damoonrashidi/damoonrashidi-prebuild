@@ -3,9 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "description": "Ionic PWA Toolkit",
-  "files": [
-    "dist/"
-  ],
+  "files": ["dist/"],
   "scripts": {
     "build": "stencil build",
     "start": "stencil build --dev --watch --serve",
@@ -14,7 +12,6 @@
     "test.watch": "jest --watch"
   },
   "dependencies": {
-    "@ionic/core": "4.0.0-beta.11",
     "@stencil/core": "0.12.4",
     "@stencil/sass": "^0.1.0",
     "rxjs": "^6.3.2"
@@ -26,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ionic-team/ionic-pwa-toolkit.git"
+    "url": "https://github.com/damoonrashidi/damoonrashidi-prebuild"
   },
   "author": "Ionic Team",
   "license": "MIT",
@@ -36,15 +33,10 @@
   "homepage": "https://github.com/ionic-team/ionic-pwa-toolkit",
   "jest": {
     "transform": {
-      "^.+\\.(js|ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
+      "^.+\\.(js|ts|tsx)$":
+        "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
     },
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(tsx?|jsx?)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "json",
-      "jsx"
-    ]
+    "moduleFileExtensions": ["ts", "tsx", "js", "json", "jsx"]
   }
 }
